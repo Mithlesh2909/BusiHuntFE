@@ -1,34 +1,46 @@
 .features {
+
   display: flex;
-  justify-content: center;   
+  justify-content: center;
   align-items: stretch;
-  flex-wrap: nowrap;
-  padding: 60px 80px;     
+
+  flex-wrap: wrap;              /* FIXED */
+
+  padding: 40px 20px;           /* reduced */
+
   background: #f8f9fa;
-  gap: 70px;
-  max-width: 1200px;        
-  margin: 0 auto;          
+
+  gap: 30px;                    /* reduced */
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
 }
 
 .feature-box {
   background: #e63946;
   color: white;
-  padding: 40px;
-  width: 30%;
-  min-height: 350px;
+  padding: 30px;
+  width: 280px;                 /* FIXED (instead of 30%) */
+  min-height: 300px;
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .why-busihunt {
   display: flex;
-  justify-content: space-between;   
+  justify-content: space-between;
   align-items: flex-start;
-  padding: 80px 40px;               
-  max-width: 1200px;               
-  margin: 0 auto;                  
-  gap: 40px;                      
+  flex-wrap: wrap;              /* FIXED */
+  padding: 60px 20px;           /* reduced */
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
 }
 
 .why-text {
@@ -37,37 +49,31 @@
 }
 
 .contact-box {
-  flex: 0 0 350px;                   
+  flex: 1;
+  max-width: 350px;
   background: #f8f9fa;
-  padding: 40px;
+  padding: 30px;
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-
-
-/* Bigger text to match height */
 .feature-box h2 {
-  margin-bottom: 20px;
-  font-size: 26px;            
-  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 15px;
 }
 
 .feature-box p {
-  font-size: 18px;
-  line-height: 1.5;        
-  flex-grow: 1;             
-  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .feature-btn {
-  align-self: center;    
   background: black;
   color: white;
   border: none;
-  padding: 12px 18px;
-  font-size: 20px;
+  padding: 10px 14px;
+  font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
 }
@@ -104,14 +110,14 @@
 }
 
 .hero-header h1 {
-  font-size: 40px;        
+  font-size: 32px;        
   font-weight: 700;
   margin-bottom: 20px;
   color: #1f3c88;         
 }
 
 .hero-header h2 {
-  font-size: 24px;       
+  font-size: 20px;       
   font-weight: 500;
   color: #e63946;        
 }
