@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 
 import { Header } from './components/header/header';
-import { Carousel } from './components/carousel/carousel';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     Header,
-    Carousel
+    RouterOutlet
   ],
   templateUrl: './home.html',
   styleUrl: './home.css'
