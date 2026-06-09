@@ -4,8 +4,9 @@ import { Carousel } from '../carousel/carousel';
 
 @Component({
   selector: "app-landingpage",
+  standalone: true,  
   imports: [Carousel],
   templateUrl: "./landingpage.html",
-  styleUrl: "./landingpage.css",
+  styleUrls: ["./landingpage.css"],
 })
 export class Landingpage {}

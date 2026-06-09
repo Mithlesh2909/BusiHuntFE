@@ -1,1 +1,49 @@
-<p>signup works!</p>
+<div class="signup-page">
+
+  <div class="overlay"></div>
+
+  <div class="signup-container">
+
+    <!-- Left side: form -->
+    <div class="signup-form-section">
+      <div class="signup-header">
+        <h1>Create Account</h1>
+        <p>Sign up to BusiHunt</p>
+      </div>
+
+      <form class="signup-form">
+
+        <div class="input-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Enter your name" />
+        </div>
+
+        <div class="input-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email" />
+        </div>
+
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" placeholder="Enter password" />
+        </div>
+
+        <button type="submit" class="signup-btn">
+          Sign Up
+        </button>
+
+        <p class="login-text">
+          Already have an account?
+          <a routerLink="/login">Login</a>
+        </p>
+
+      </form>
+    </div>
+
+    <!-- Right side: image -->
+    <div class="signup-image-section">
+      <img src="assets/busihunt.png" alt="BusiHunt" />
+    </div>
+
+  </div>
+</div>

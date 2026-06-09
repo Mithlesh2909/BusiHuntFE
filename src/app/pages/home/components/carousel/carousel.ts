@@ -1,4 +1,4 @@
-import { Component, NgZone } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,53 +8,39 @@ import { CommonModule } from '@angular/common';
   templateUrl: './carousel.html',
   styleUrl: './carousel.css'
 })
-export class Carousel {
-  images = [
+export class Carousel implements OnInit, OnDestroy {
+
+  images: string[] = [
     'assets/carousel/homescreen1.jpg',
     'assets/carousel/homescreen2.jpg',
     'assets/carousel/homescreen3.jpg'
   ];
-  currentIndex = 0;
 
+  currentIndex = 0;
   intervalId: any;
 
-  ngOnInit() {
-
+  ngOnInit(): void {
     this.startAutoSlide();
-
   }
 
-  startAutoSlide() {
-
+  startAutoSlide(): void {
     this.intervalId = setInterval(() => {
-
       this.nextImage();
-
-    }, 1000); // ⬅️ 1 second
-
+    }, 3000);
   }
 
-  nextImage() {
-
+  nextImage(): void {
     this.currentIndex = (this.currentIndex + 1) % this.images.length;
-
   }
 
-  prevImage() {
-
+  prevImage(): void {
     this.currentIndex =
-
       (this.currentIndex - 1 + this.images.length) % this.images.length;
-
   }
 
-  ngOnDestroy() {
-
+  ngOnDestroy(): void {
     if (this.intervalId) {
-
       clearInterval(this.intervalId);
-
     }
-
   }
 }

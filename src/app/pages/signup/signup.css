@@ -1,0 +1,131 @@
+.signup-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(31, 60, 136, 0.7); /* dark blue overlay */
+  top: 0;
+  left: 0;
+}
+
+.signup-container {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  width: 800px; /* wider to fit form + image */
+  display: flex; /* side-by-side layout */
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+/* Left side: form */
+.signup-form-section {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.signup-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #e63946; /* red accent */
+  margin-bottom: 10px;
+}
+
+.signup-header p {
+  font-size: 16px;
+  color: #1f3c88; /* dark blue */
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  background: #1f3c88; /* dark blue */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.signup-btn:hover {
+  background: #e63946; /* red hover */
+}
+
+.login-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.login-text a {
+  color: #e63946; /* red accent link */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Right side: image */
+.signup-image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-image-section img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column; /* stack form and image */
+    width: 90%;
+    padding: 20px;
+  }
+
+  .signup-form-section {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .signup-image-section img {
+    max-width: 80%;
+  }
+}
