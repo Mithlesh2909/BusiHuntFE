@@ -1,0 +1,13 @@
+export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
+  <meta charset="utf-8">
+  <title>Client</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<style>html,body{overflow-x:hidden;max-width:100%}body{font-family:Poppins,Segoe UI,Arial,sans-serif}
+</style><link rel="stylesheet" href="styles-GQUGHTFK.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-GQUGHTFK.css"></noscript><style ng-app-id="ng">[_nghost-ng-c906920602]{display:flex;flex-direction:column;height:100vh;overflow:hidden}</style><style ng-app-id="ng">.header[_ngcontent-ng-c3446992870]{height:90px;width:100%;background:#fff;box-shadow:0 2px 10px #0000001a}.header-inner[_ngcontent-ng-c3446992870]{height:100%;display:flex;align-items:center;padding:0 20px}.nav-menu[_ngcontent-ng-c3446992870]{display:flex;gap:25px;margin-left:auto;align-items:center}.logo[_ngcontent-ng-c3446992870]{width:120px;height:auto}.nav-menu[_ngcontent-ng-c3446992870]   a[_ngcontent-ng-c3446992870]{text-decoration:none;color:#222;font-size:22px;font-weight:500;font-family:Poppins,Segoe UI,sans-serif;transition:.3s ease}.nav-menu[_ngcontent-ng-c3446992870]   a[_ngcontent-ng-c3446992870]:hover{color:#1f3c88}</style><style ng-app-id="ng">.carousel-container[_ngcontent-ng-c2832299263]{flex:1;overflow:hidden}.carousel-container[_ngcontent-ng-c2832299263]   img[_ngcontent-ng-c2832299263]{width:100%;height:100%;object-fit:cover}</style></head>
+<body>
+  <app-root ng-version="21.2.14" ng-server-context="ssg"><router-outlet></router-outlet><app-home _nghost-ng-c906920602><app-header _ngcontent-ng-c906920602 _nghost-ng-c3446992870><header _ngcontent-ng-c3446992870 class="header"><div _ngcontent-ng-c3446992870 class="header-inner"><div _ngcontent-ng-c3446992870 class="logo-section"><img _ngcontent-ng-c3446992870 src="/assets/busihunt.png" class="logo"></div><nav _ngcontent-ng-c3446992870 class="nav-menu"><a _ngcontent-ng-c3446992870 routerlink="/home" href="/home">Home</a><a _ngcontent-ng-c3446992870 href="#">Who we are</a><a _ngcontent-ng-c3446992870 href="#">Find a chapter</a><a _ngcontent-ng-c3446992870 href="#">Team</a><a _ngcontent-ng-c3446992870 href="#">Gallery</a><a _ngcontent-ng-c3446992870 routerlink="/signup" href="/signup">SignUp</a></nav></div></header></app-header><app-carousel _ngcontent-ng-c906920602 _nghost-ng-c2832299263><div _ngcontent-ng-c2832299263 class="carousel-container"><img _ngcontent-ng-c2832299263 alt="carousel" src="/assets/carousel/homescreen1.jpg"></div></app-carousel></app-home><!----></app-root>
+<script src="main-XWARTZNV.js" type="module"></script>
+
+</body></html>`;

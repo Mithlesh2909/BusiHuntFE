@@ -1,0 +1,84 @@
+.login-page {
+  position: relative;
+  height: 100vh;
+
+  background-image: url("../../../assets/busihunt.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding-right: 80px;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.login-container {
+  position: relative;
+  z-index: 2;
+
+  width: 420px;
+  padding: 40px;
+
+  border-radius: 24px;
+
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(16px);
+
+  color: white;
+}
+
+.login-header {
+  margin-bottom: 30px;
+}
+
+.login-header h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.login-header p {
+  opacity: 0.8;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
+
+.login-btn {
+  width: 100%;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-text a {
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,2 @@
+export default `html,body{overflow-x:hidden;max-width:100%}body{font-family:Poppins,Segoe UI,Arial,sans-serif}
+`;
