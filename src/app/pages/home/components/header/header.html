@@ -5,15 +5,44 @@
       <img src="/assets/busihunt.png" class="logo" />
     </div>
 
-    <nav class="nav-menu">
-      <a routerLink="/home/landing-page"><i class="fas fa-home"></i> Home</a>
-      <a routerLink="/home/who-we-are"><i class="fas fa-users"></i> Who we are</a>
-       <!-- <a routerLink="/home/team"><i class="fas fa-user-friends"></i> Team</a> -->
-      <a routerLink="/home/find-chapter"><i class="fas fa-map-marker-alt"></i>Join Us</a>
-     
-      <!-- <a routerLink="/home/gallery"><i class="fas fa-images"></i> Gallery</a> -->
-      <a routerLink="/signup"><i class="fas fa-user-plus"></i> SignUp</a>
-    </nav>
+   <nav class="nav-menu">
+  <a routerLink="/home/landing-page"><i class="fas fa-home"></i> Home</a>
+
+  <div class="dropdown">
+    <a routerLink="/home/who-we-are" class="dropdown-toggle">
+      <i class="fas fa-users"></i> Who we are
+    </a>
+    <div class="dropdown-menu">
+      <a routerLink="/home/who-we-are">About Us</a>
+      <a routerLink="/home/about-director">About Director</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a routerLink="/home/puducherry-chapter" class="dropdown-toggle">
+      <i class="fas fa-users"></i> Find a Chapter
+    </a>
+    <div class="dropdown-menu">
+      <a routerLink="/home/puducherry-chapter">Puducherry Chapter</a>
+      <a routerLink="/home/chennai-chapter">Chennai Chapter</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a routerLink="/home/team" class="dropdown-toggle">
+      <i class="fas fa-users"></i> Team
+    </a>
+    <div class="dropdown-menu">
+      <a routerLink="/home/team">Meet the team</a>
+      <a routerLink="/home/club-events">Club Events</a>
+    </div>
+  </div>
+  
+
+  <a routerLink="/home/join-us"><i class="fas fa-map-marker-alt"></i>How to Join</a>
+  <a routerLink="/signup"><i class="fas fa-user-plus"></i> SignUp</a>
+</nav>
+
 
   </div>
 </header>

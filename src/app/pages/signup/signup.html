@@ -1,51 +1,52 @@
-<div class="signup-page">
 
-  <div class="overlay"></div>
+<section class="signup-section">
+  <div class="container">
 
-  <div class="signup-container">
+    <!-- Section Title -->
+    <h2 class="section-title">Apply for Membership</h2>
+    <p class="subtitle">Connect With Us</p>
+    <p class="description">
+      Submit your details and chapter preferences. Our local growth coordinator will reach out to secure your guest pass.
+    </p>
 
-    <!-- Left side: form -->
-    <div class="signup-form-section">
-
-      <div class="signup-header">
-        <h1>Create Account</h1>
-        <p>Sign up to BusiHunt</p>
+    <!-- Signup Form -->
+    <form class="signup-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" />
       </div>
 
-      <form class="signup-form">
+      <div class="form-group">
+        <label for="business">Business Name</label>
+        <input type="text" id="business" placeholder="Enter your business name" />
+      </div>
 
-        <div class="input-group">
-          <label>Your Name</label>
-          <input type="text" placeholder="Enter your name" />
-        </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+      </div>
 
-        <div class="input-group">
-          <label>Email Address</label>
-          <input type="email" placeholder="Enter your email" />
-        </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter your 10-digit phone number" />
+      </div>
 
-        <div class="input-group">
-          <label>Password</label>
-          <input type="password" placeholder="Enter password" />
-        </div>
+      <div class="form-group">
+        <label for="category">Inquiry Category</label>
+        <select id="category">
+          <option>Join a Chapter (Networking)</option>
+          <option>General Inquiry</option>
+          <option>Partnership</option>
+        </select>
+      </div>
 
-        <button type="submit" class="signup-btn">
-          Sign Up
-        </button>
+      <div class="form-group">
+        <label for="description">Brief Business Description</label>
+        <textarea id="description" placeholder="Tell us about your industry and what you hope to achieve at BusiHunt..."></textarea>
+      </div>
 
-        <p class="login-text">
-          Already have an account?
-          <a routerLink="/login">Login</a>
-        </p>
-
-      </form>
-
-    </div>
-
-    <!-- Right side: image -->
-    <div class="signup-image-section">
-      <img src="assets/busihunt.png" alt="BusiHunt" />
-    </div>
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
 
   </div>
-</div>
+</section>
