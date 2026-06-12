@@ -93,29 +93,53 @@ app-carousel {
 
 .stat-card {
   background: #fff;
-  padding: 16px;       
-  border-radius: 8px;
-  width: 240px;         
+  padding: 20px;       
+  border-radius: 10px;
+  width: 260px;         
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Icon styling inside stat cards */
+.stat-card i {
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: #1f3c88;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Color variants with shadows */
+.stat-card.blue {
+  box-shadow: 0 8px 20px rgba(31, 60, 136, 0.4); /* blue shadow */
+}
+.stat-card.red {
+  box-shadow: 0 8px 20px rgba(211, 47, 47, 0.4); /* red shadow */
+  width: 400px;         
+  height: 120px;     
+}
+
+/* Text colors */
 .stat-card.blue h2 {
   color: #1f3c88;
 }
-
 .stat-card.red h2 {
   color: #e63946;
 }
 
-/* wider red card */
-.stat-card.red {
-  width: 400px;         
-  height: 100px;     
+/* Hover effect: lift + stronger glow */
+.stat-card:hover {
+  transform: translateY(-8px) scale(1.03);
 }
 
-.stat-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+.stat-card.blue:hover {
+  box-shadow: 0 12px 28px rgba(31, 60, 136, 0.6);
+}
+.stat-card.red:hover {
+  box-shadow: 0 12px 28px rgba(211, 47, 47, 0.6);
+}
+
+/* Icon hover effect */
+.stat-card:hover i {
+  color: #e63946;
+  transform: scale(1.2);
 }
