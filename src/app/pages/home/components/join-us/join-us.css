@@ -6,7 +6,7 @@
   align-items: flex-start; /* align to top */
   justify-content: center;
   position: relative;
-  top: -50px; /* move all content 100px up */
+  top: -50px; /* move all content up */
 }
 
 .container {
@@ -20,7 +20,8 @@
   font-size: 45px;
   font-weight: 800;
   color: #d32f2f;
-  margin-bottom: 15px;
+  margin-bottom: -20px; 
+  margin-top:50px
 }
 
 .subtitle {
