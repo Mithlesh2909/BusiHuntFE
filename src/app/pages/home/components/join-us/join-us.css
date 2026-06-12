@@ -1,6 +1,6 @@
 .join-section {
   background: transparent;
-  padding: 40px;
+  padding: 20px;
   min-height: 100vh;
   display: flex;
   align-items: flex-start; /* align to top */
@@ -17,7 +17,7 @@
 }
 
 .section-title {
-  font-size: 52px;
+  font-size: 45px;
   font-weight: 800;
   color: #d32f2f;
   margin-bottom: 15px;
@@ -45,7 +45,7 @@
 
 .step-card {
   background: #fafafa;
-  padding: 50px; /* bigger card size */
+  padding: 30px; /* bigger card size */
   border-radius: 14px;
   box-shadow: 0 10px 24px rgba(0,0,0,0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
