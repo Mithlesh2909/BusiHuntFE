@@ -1,6 +1,6 @@
 .chapter-section {
   background: transparent;
-  padding: 60px 40px;
+  padding: 20px 40px;
   min-height: 100vh; /* full screen */
   display: flex;
   align-items: center;
@@ -93,7 +93,7 @@
 
 .info-card {
   background: #fafafa;
-  padding: 50px; /* bigger cards */
+  padding: 30px; /* bigger cards */
   font-size: 22px; /* larger text */
   font-weight: 700;
   border-radius: 12px;
