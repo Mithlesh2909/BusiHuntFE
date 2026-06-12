@@ -1,32 +1,20 @@
 .chapter-section {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 40px 20px;
+  background: transparent;
+  padding: 40px 20px;   /* reduced padding so content moves up */
   color: #333;
   text-align: center;
-  background: transparent;
-  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* stack content vertically */
+  justify-content: flex-start; /* align content to top */
 }
 
-.chapter-section::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-size: cover;
-  opacity: 0.2;
-  z-index: 0;
-}
 .container {
-  position: relative;    /* ensure content is above background */
-  z-index: 1;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .section-title {
   font-size: 42px;
   font-weight: 700;
