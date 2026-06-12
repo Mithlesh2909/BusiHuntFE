@@ -1,8 +1,9 @@
 import { Component } from "@angular/core";
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: "app-chapter",
-  imports: [],
+  imports: [CommonModule],
   templateUrl: "./chapter.html",
   styleUrl: "./chapter.css",
 })

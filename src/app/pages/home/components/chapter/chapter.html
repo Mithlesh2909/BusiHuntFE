@@ -1,4 +1,9 @@
-<section class="chapter-section">
+<section class="chapter-section" 
+         [ngStyle]="{'background-image': 'url(assets/busihunt.jpg)', 
+                     'background-size': 'cover', 
+                     'background-position': 'center', 
+                     'opacity': '0.2'}">
+
   <div class="container">
 
     <!-- Section Title -->
@@ -10,7 +15,7 @@
       <img src="/assets/carousel/homescreen1.jpg" alt="Chapter Banner" />
     </div>
 
-    <!-- Chapter Buttons -->
+    <!-- Chapter Buttons -->  
     <div class="chapter-buttons">
       <a routerLink="/home/puducherry" class="btn btn-primary">Puducherry Chapter</a>
       <a routerLink="/home/chennai" class="btn btn-secondary">Chennai Chapter</a>

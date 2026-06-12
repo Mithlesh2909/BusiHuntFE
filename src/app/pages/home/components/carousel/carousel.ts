@@ -13,7 +13,13 @@ export class Carousel implements OnInit, OnDestroy {
   images: string[] = [
     'assets/carousel/homescreen1.jpg',
     'assets/carousel/homescreen2.jpg',
-    'assets/carousel/homescreen3.jpg'
+    'assets/carousel/homescreen3.jpg',
+    'assets/carousel/joinTeam.jpg',
+    'assets/carousel/meeting1.jpg',
+    'assets/carousel/meeting2.jpg',
+    'assets/carousel/meeting3.jpg',
+    'assets/carousel/meeting4.jpg',
+
   ];
 
   currentIndex = 0;
