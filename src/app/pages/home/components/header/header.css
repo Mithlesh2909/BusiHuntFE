@@ -22,24 +22,35 @@
 }
 
 .logo {
-  width: 80px; /* smaller logo */
+  width: 80px; 
   height: auto;
 }
 
-/* Header text next to logo */
 .header-text {
-  font-family: "Pacifico", cursive; /* stylish font */
-  font-size: 36px; /* larger font size */
+  
+  font-size: 36px;
   font-weight: 700;
-  letter-spacing: 2px; /* wider spacing */
-  color: #1f3c88; /* dark blue */
+  letter-spacing: 2px;
+  color: #1f3c88; 
   transition: color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
 }
 
+.header-text1 {
+  
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #1f3c88; 
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  margin-left:-20px;
+  color:red
+}
+
 .header-text:hover {
-  color: #e63946; /* red accent on hover */
-  transform: scale(1.12); /* slightly bigger on hover */
+  color: #e63946; 
+  transform: scale(1.12); 
 }
 
 /* Navigation */
