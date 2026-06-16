@@ -1,12 +1,12 @@
 .chapter-section {
-  background: transparent;
-  padding: 40px 20px;   /* reduced padding so content moves up */
-  color: #333;
+  background: var(--bg-primary);
+  padding: 60px 20px;
+  color: var(--text-secondary);
   text-align: center;
   min-height: 100vh;
   display: flex;
-  flex-direction: column; /* stack content vertically */
-  justify-content: flex-start; /* align content to top */
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .container {
@@ -18,14 +18,14 @@
 .section-title {
   font-size: 42px;
   font-weight: 700;
-  color: #d32f2f;
+  color: var(--brand-red);
   margin-bottom: 15px;
 }
 
 .subtitle {
   font-size: 22px;
   font-weight: 600;
-  color: #1f3c88;
+  color: var(--text-white);
   margin-bottom: 50px;
 }
 
@@ -44,22 +44,24 @@
 }
 
 .btn-primary {
-  background: #d32f2f;
-  color: #fff;
+  background: var(--brand-red);
+  color: var(--text-white);
 }
 
 .btn-primary:hover {
-  background: #b71c1c;
+  opacity: 0.9;
   transform: scale(1.05);
 }
 
 .btn-secondary {
-  background: #1f3c88;
-  color: #fff;
+  background: var(--bg-secondary);
+  color: var(--text-white);
+  border: 1px solid var(--card-border);
 }
 
 .btn-secondary:hover {
-  background: #162d66;
+  background: var(--brand-red);
+  color: var(--text-white);
   transform: scale(1.05);
 }
 
@@ -71,18 +73,21 @@
 }
 
 .info-card {
-  background: #fafafa;
+  background: var(--bg-secondary);
   padding: 40px;
   font-size: 20px;
   font-weight: 600;
   border-radius: 10px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  color: var(--text-secondary);
 }
 
 .info-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.6);
+  border-color: var(--brand-red);
 }
 
 .chapter-logo img {
@@ -97,12 +102,10 @@
   top: -20px;  
 }
 
-
 .chapter-image img {
   width: 100%;
-  max-height: 300px;  /* limit height */
-  object-fit: cover;  /* crop neatly if needed */
+  max-height: 300px;
+  object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.4);
 }
-

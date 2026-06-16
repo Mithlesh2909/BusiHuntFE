@@ -1,7 +1,7 @@
 .chapter-section {
-  background: transparent;
-  padding: 20px 40px;
-  min-height: 100vh; /* full screen */
+  background: var(--bg-primary);
+  padding: 40px 60px;
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -14,7 +14,7 @@
 
 .chapter-layout {
   display: flex;
-  gap: 80px; /* more spacing between left and right */
+  gap: 80px;
   align-items: flex-start;
 }
 
@@ -24,16 +24,16 @@
 }
 
 .section-title {
-  font-size: 52px; /* larger heading */
+  font-size: 52px;
   font-weight: 800;
-  color: #d32f2f;
+  color: var(--brand-red);
   margin-bottom: 20px;
 }
 
 .subtitle {
-  font-size: 28px; /* larger subtitle */
+  font-size: 28px;
   font-weight: 600;
-  color: #1f3c88;
+  color: var(--text-white);
   margin-bottom: 50px;
 }
 
@@ -44,10 +44,10 @@
 
 .chapter-image img {
   width: 100%;
-  max-height: 350px; /* taller image */
+  max-height: 350px;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
 .chapter-buttons {
@@ -55,7 +55,7 @@
 }
 
 .btn {
-  padding: 18px 36px; /* bigger buttons */
+  padding: 18px 36px;
   text-decoration: none;
   border-radius: 8px;
   margin-right: 25px;
@@ -65,50 +65,25 @@
 }
 
 .btn-primary {
-  background: #d32f2f;
-  color: #fff;
+  background: var(--brand-red);
+  color: var(--text-white);
 }
 
 .btn-primary:hover {
-  background: #b71c1c;
+  opacity: 0.9;
   transform: scale(1.08);
 }
 
 .btn-secondary {
-  background: #1f3c88;
-  color: #fff;
+  background: var(--bg-secondary);
+  color: var(--text-white);
+  border: 1px solid var(--card-border);
 }
 
 .btn-secondary:hover {
-  background: #162d66;
+  background: var(--brand-red);
+  color: var(--text-white);
   transform: scale(1.08);
-}
-
-.chapter-right {
-  flex: 0.4;
-  display: flex;
-  flex-direction: column;
-  gap: 35px; /* more spacing between cards */
-}
-
-.info-card {
-  background: #fafafa;
-  padding: 30px; /* bigger cards */
-  font-size: 22px; /* larger text */
-  font-weight: 700;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.info-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
-}
-
-.chapter-logo img {
-  width: 150px; /* larger logo */
-  margin-top: 40px;
 }
 
 .chapter-right {
@@ -120,12 +95,14 @@
 
 /* Base card style */
 .info-card {
-  background: #fff; /* keep cards white for readability */
+  background: var(--bg-secondary);
   padding: 30px;
   font-size: 22px;
   font-weight: 700;
   border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--card-border);
+  color: var(--text-secondary);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 /* Different colorful shadows */
@@ -145,6 +122,7 @@
 /* Hover effect: lift + stronger glow */
 .info-card:hover {
   transform: translateY(-8px);
+  border-color: var(--brand-red);
 }
 
 .info-card:nth-child(1):hover {
@@ -158,4 +136,9 @@
 }
 .info-card:nth-child(4):hover {
   box-shadow: 0 12px 28px rgba(123, 31, 162, 0.6);
+}
+
+.chapter-logo img {
+  width: 150px;
+  margin-top: 40px;
 }

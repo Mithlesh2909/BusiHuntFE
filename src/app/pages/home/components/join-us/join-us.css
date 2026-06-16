@@ -1,12 +1,12 @@
 .join-section {
-  background: transparent;
-  padding: 20px;
+  background: var(--bg-primary);
+  padding: 40px 20px;
   min-height: 100vh;
   display: flex;
-  align-items: flex-start; /* align to top */
+  align-items: flex-start;
   justify-content: center;
   position: relative;
-  top: -50px; /* move all content up */
+  top: -50px;
 }
 
 .container {
@@ -19,21 +19,21 @@
 .section-title {
   font-size: 45px;
   font-weight: 800;
-  color: #d32f2f;
-  margin-bottom: -20px; 
-  margin-top:50px
+  color: var(--brand-red);
+  margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .subtitle {
   font-size: 32px;
   font-weight: 700;
-  color: #1f3c88;
+  color: var(--text-white);
   margin-bottom: 20px;
 }
 
 .description {
   font-size: 20px;
-  color: #555;
+  color: var(--text-secondary);
   margin-bottom: 50px;
 }
 
@@ -45,40 +45,44 @@
 }
 
 .step-card {
-  background: #fafafa;
-  padding: 30px; /* bigger card size */
+  background: var(--bg-secondary);
+  padding: 30px;
   border-radius: 14px;
-  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--card-border);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  color: var(--text-secondary);
 }
 
 .step-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 14px 32px rgba(0,0,0,0.25);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.6);
+  border-color: var(--brand-red);
 }
 
 .step-icon {
-  font-size: 48px; /* large icon instead of numbers */
+  font-size: 48px;
   margin-bottom: 20px;
+  color: var(--brand-red);
 }
 
 .step-title {
   font-size: 24px;
   font-weight: 700;
-  color: #1f3c88;
+  color: var(--text-white);
   margin-bottom: 15px;
 }
 
 .step-text {
   font-size: 18px;
-  color: #333;
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 
 .join-image img {
   width: 100%;
-  max-height: 400px; /* larger image to fill space */
+  max-height: 400px;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }

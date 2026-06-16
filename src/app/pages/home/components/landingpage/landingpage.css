@@ -1,23 +1,26 @@
 .landing-page {
   width: 100%;
-  height: 100vh;        
+  min-height: 100vh;        
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: auto; /* allow scroll */
+  background-color: var(--bg-primary);
 }
 
 app-carousel {
   flex: 0 0 30%;       
 }
 
+/* Hero Section */
 .hero-section {
   flex: 0 0 50%;       
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 60px;
-  background: #f8f9fa;
+  background: var(--bg-secondary);
   box-sizing: border-box;
+  border-bottom: 1px solid var(--card-border);
 }
 
 .hero-left {
@@ -32,13 +35,13 @@ app-carousel {
 .hero-left h1 {
   font-size: 36px;
   font-weight: 700;
-  color: #1f3c88;
+  color: var(--text-white);
   margin: 0 0 20px 0;
 }
 
 .hero-left p {
   font-size: 20px;
-  color: #333;
+  color: var(--text-secondary);
   margin: 0 0 20px 0;
 }
 
@@ -59,30 +62,33 @@ app-carousel {
 }
 
 .hero-buttons .about {
-  background: #1f3c88;
-  color: #fff;
+  background: var(--bg-secondary);
+  color: var(--text-white);
+  border: 1px solid var(--card-border);
 }
 
 .hero-buttons .about:hover {
-  background: #e63946;
+  background: var(--brand-red);
 }
 
 .hero-buttons .join {
-  background: #e63946;
-  color: #fff;
+  background: var(--brand-red);
+  color: var(--text-white);
 }
 
 .hero-buttons .join:hover {
-  background: #1f3c88;
+  background: var(--bg-secondary);
+  border: 1px solid var(--brand-red);
 }
 
 .hero-badge {
   font-size: 14px;
   font-weight: 600;
-  color: #e63946;
+  color: var(--brand-red);
   margin-top: 10px;
 }
 
+/* Right Stat Cards */
 .hero-right {
   flex: 0.6;
   display: flex;
@@ -92,18 +98,19 @@ app-carousel {
 }
 
 .stat-card {
-  background: #fff;
+  background: var(--bg-secondary);
+  border: 1px solid var(--card-border);
   padding: 20px;       
   border-radius: 10px;
   width: 260px;         
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .stat-card i {
   font-size: 32px;
   margin-bottom: 12px;
-  color: #1f3c88;
+  color: var(--text-secondary);
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -111,31 +118,32 @@ app-carousel {
   box-shadow: 0 8px 20px rgba(31, 60, 136, 0.4); 
 }
 .stat-card.red {
-  box-shadow: 0 8px 20px rgba(211, 47, 47, 0.4); 
+  box-shadow: 0 8px 20px rgba(230, 57, 70, 0.4); 
   width: 400px;         
   height: 120px;     
 }
 
 .stat-card.blue h2 {
-  color: #1f3c88;
+  color: var(--text-white);
 }
 .stat-card.red h2 {
-  color: #e63946;
+  color: var(--brand-red);
 }
 
 .stat-card:hover {
   transform: translateY(-8px) scale(1.03);
+  border-color: var(--brand-red);
 }
 
 .stat-card.blue:hover {
   box-shadow: 0 12px 28px rgba(31, 60, 136, 0.6);
 }
 .stat-card.red:hover {
-  box-shadow: 0 12px 28px rgba(211, 47, 47, 0.6);
+  box-shadow: 0 12px 28px rgba(230, 57, 70, 0.6);
 }
 
 /* Icon hover effect */
 .stat-card:hover i {
-  color: #e63946;
+  color: var(--brand-red);
   transform: scale(1.2);
 }

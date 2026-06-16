@@ -1,16 +1,16 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
+html, body, app-root {
   height: 100%;
-  font-family: Arial, sans-serif;
-    background-color: #f9e7ec; 
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-white);
+  font-family: 'Inter', sans-serif;
 }
-body {
-  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
-}
-app-root {
-  display: block;
-  min-height: 100vh;
-  background-color: #f8e8ee; 
+
+:root {
+  --bg-primary: #0A0F2C;       /* Main canvas background */
+  --bg-secondary: #131A3C;     /* Cards, header, sidebars */
+  --brand-red: #E63946;        /* Accent, hover, CTA */
+  --text-white: #FFFFFF;       /* Primary text */
+  --text-secondary: #C8CCD8;   /* Body text */
+  --card-border: #2B3255;      /* Subtle borders */
 }
