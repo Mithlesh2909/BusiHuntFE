@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-header',
+  selector: "app-footer",
   standalone: true,
-  templateUrl: './header.html',
-  styleUrls: ['./header.css']
+  templateUrl: "./footer.html",
+  styleUrls: ["./footer.css"],
 })
-export class Header {
+export class Footer {
   constructor(private router: Router) {}
 
   scrollToSection(sectionId: string) {

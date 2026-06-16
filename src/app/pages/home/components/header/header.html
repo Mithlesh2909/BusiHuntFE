@@ -7,43 +7,43 @@
         <span class="header-text1">HUNT</span>
     </div>
 
-   <nav class="nav-menu">
-  <a routerLink="/home/landing-page"><i class="fas fa-home"></i> Home</a>
+ <nav class="nav-menu">
+  <a (click)="scrollToSection('landing-page')"><i class="fas fa-home"></i> Home</a>
 
   <div class="dropdown">
-    <a routerLink="/home/who-we-are" class="dropdown-toggle">
+    <a (click)="scrollToSection('who-we-are')" class="dropdown-toggle">
       <i class="fas fa-users"></i> Who we are
     </a>
     <div class="dropdown-menu">
-      <a routerLink="/home/who-we-are">About Us</a>
-      <a routerLink="/home/about-director">About Director</a>
+      <a (click)="scrollToSection('who-we-are')">About Us</a>
+      <a (click)="scrollToSection('about-director')">About Director</a>
     </div>
   </div>
 
   <div class="dropdown">
-    <a routerLink="/home/puducherry-chapter" class="dropdown-toggle">
+    <a (click)="scrollToSection('puducherry-chapter')" class="dropdown-toggle">
       <i class="fas fa-users"></i> Find a Chapter
     </a>
     <div class="dropdown-menu">
-      <a routerLink="/home/puducherry-chapter">Puducherry Chapter</a>
-      <a routerLink="/home/chennai-chapter">Chennai Chapter</a>
+      <a (click)="scrollToSection('puducherry-chapter')">Puducherry Chapter</a>
+      <a (click)="scrollToSection('chennai-chapter')">Chennai Chapter</a>
     </div>
   </div>
 
   <div class="dropdown">
-    <a routerLink="/home/team" class="dropdown-toggle">
+    <a (click)="scrollToSection('team')" class="dropdown-toggle">
       <i class="fas fa-users"></i> Team
     </a>
     <div class="dropdown-menu">
-      <a routerLink="/home/team">Meet the team</a>
-      <a routerLink="/home/club-events">Club Events</a>
+      <a (click)="scrollToSection('team')">Meet the team</a>
+      <a (click)="scrollToSection('club-events')">Club Events</a>
     </div>
   </div>
-  
 
-  <a routerLink="/home/join-us"><i class="fas fa-map-marker-alt"></i>How to Join</a>
+  <a (click)="scrollToSection('join-us')"><i class="fas fa-map-marker-alt"></i> How to Join</a>
   <a routerLink="/signup"><i class="fas fa-user-plus"></i> SignUp</a>
 </nav>
+
 
 
   </div>

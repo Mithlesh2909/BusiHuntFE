@@ -1,6 +1,22 @@
 :host {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  overflow: hidden;
+  display: block;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+/* Apply red border and spacing to each section */
+section {
+  border-bottom: 2px solid var(--brand-red); /* bold red divider */
+  padding: 60px 20px; /* breathing room */
+}
+
+/* Optional: add a red top border to the first section */
+section:first-of-type {
+  border-top: 2px solid var(--brand-red);
+}
+
+/* Footer section: stronger separation */
+#footer {
+  border-top: 3px solid var(--brand-red);
+  border-bottom: none;
 }
